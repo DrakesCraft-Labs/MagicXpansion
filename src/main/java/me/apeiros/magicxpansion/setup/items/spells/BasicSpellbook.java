@@ -1,0 +1,39 @@
+package me.apeiros.magicxpansion.setup.items.spells;
+
+import com.github.drakescraft_labs.slimefun4.api.events.PlayerRightClickEvent;
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
+import org.bukkit.inventory.ItemStack;
+import com.github.drakescraft_labs.slimefun4.core.attributes.RandomMobDrop;
+import com.github.drakescraft_labs.slimefun4.core.handlers.ItemUseHandler;
+import com.github.drakescraft_labs.slimefun4.implementation.items.SimpleSlimefunItem;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+
+public class BasicSpellbook extends SimpleSlimefunItem<ItemUseHandler> implements RandomMobDrop {
+
+    private static final int[] EXP_INPUT = {10, 19, 28, 37};
+    private static final int[] EXP_INPUT_BG = {0, 1, 2, 9, 11, 18, 20, 27, 29, 36, 38, 45, 47};
+
+    private static final int[] SPELL_LIST = {13, 14, 15, 16, 22, 23, 24, 25, 31, 32, 33, 34, 40, 41, 42, 43};
+    private static final int[] SPELL_LIST_BG = {3, 4, 5, 6, 7, 8, 12, 17, 21, 26, 30, 35, 39, 44, 48, 50, 51, 53};
+
+    private static final int PREVIOUS_PAGE = 49;
+    private static final int NEXT_PAGE = 52;
+
+    public BasicSpellbook(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+        super(category, item, recipeType, recipe);
+    }
+
+    @Override
+    public int getMobDropChance() {
+        return 15;
+    }
+
+    @Override
+    public ItemUseHandler getItemHandler() {
+        return (e) -> {
+        };
+    }
+
+}

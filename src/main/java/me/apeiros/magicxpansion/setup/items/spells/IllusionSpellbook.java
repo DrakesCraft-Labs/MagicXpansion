@@ -1,0 +1,72 @@
+package me.apeiros.magicxpansion.setup.items.spells;
+
+
+import com.github.drakescraft_labs.slimefun4.core.attributes.RandomMobDrop;
+import com.github.drakescraft_labs.slimefun4.core.handlers.ItemUseHandler;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunPlugin;
+import com.github.drakescraft_labs.slimefun4.implementation.items.SimpleSlimefunItem;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
+import me.apeiros.magicxpansion.utils.GradientUtils;
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.CustomItem;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+
+import java.awt.Color;
+
+public class IllusionSpellbook extends SimpleSlimefunItem<ItemUseHandler> implements RandomMobDrop {
+
+    private static final int[] EXP_INPUT = {10, 19, 28, 37};
+    private static final int[] EXP_INPUT_BG = {0, 1, 2, 9, 11, 18, 20, 27, 29, 36, 38, 45, 47};
+
+    private static final int[] SPELL_LIST = {13, 14, 15, 16, 22, 23, 24, 25, 31, 32, 33, 34, 40, 41, 42, 43};
+    private static final int[] SPELL_LIST_BG = {3, 4, 5, 6, 7, 8, 12, 17, 21, 26, 30, 35, 39, 44, 48, 49, 50, 51, 52, 53};
+
+    public IllusionSpellbook(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+        super(category, item, recipeType, recipe);
+    }
+
+    @Override
+    public int getMobDropChance() {
+        return 15;
+    }
+
+    @Override
+    public ItemUseHandler getItemHandler() {
+        return (e) -> {
+            openIllusionSpellbookMenu(e.getPlayer());
+        };
+    }
+
+    public void openIllusionSpellbookMenu(Player p) {
+        ChestMenu menu = new ChestMenu(ChatColor.BOLD + "" +
+                    GradientUtils.makeStringGradient("Spellbook of Illusions",
+                            new Color(85, 85, 255),
+                            new Color(147, 0, 255)));
+
+        for (int slot : SPELL_LIST_BG) {
+            menu.addItem(slot, new CustomItem(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE),
+                    GradientUtils.makeStringGradient("Spell List",
+                            new Color(254, 75, 75),
+                            new Color(255, 160, 18))),
+                    ChestMenuUtils.getEmptyClickHandler());
+        }
+
+        for (int slot : EXP_INPUT_BG) {
+            menu.addItem(slot, new CustomItem(new ItemStack(Material.LIME_STAINED_GLASS_PANE),
+                    GradientUtils.makeStringGradient("EXP Crystal Input",
+                            new Color(85, 255, 85),
+                            new Color(84, 255, 237))),
+                    ChestMenuUtils.getEmptyClickHandler());
+        }
+
+        menu.open(p);
+    }
+
+}
