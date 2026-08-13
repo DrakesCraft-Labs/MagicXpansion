@@ -124,7 +124,7 @@ public class Setup {
                 }).register(instance);
 
         // Register Trident
-        VanillaItem trident = new VanillaItem(Categories.WEAPONS, new ItemStack(Material.TRIDENT), "TRIDENT", RecipeType.ANCIENT_ALTAR,
+        VanillaItem trident = new VanillaItem(Categories.WEAPONS, new ItemStack(Material.TRIDENT), "MX_TRIDENT", RecipeType.ANCIENT_ALTAR,
                 new ItemStack[] {
                         Items.AQUATIC_NETHERITE_INGOT, new ItemStack(Material.NAUTILUS_SHELL), Items.AQUATIC_NETHERITE_INGOT,
                         Items.MAGIC_LUMP_5, new ItemStack(Material.HEART_OF_THE_SEA), Items.MAGIC_LUMP_5,
