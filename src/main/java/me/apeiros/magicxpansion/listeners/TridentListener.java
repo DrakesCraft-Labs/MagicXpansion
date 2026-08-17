@@ -1,7 +1,7 @@
 package me.apeiros.magicxpansion.listeners;
 
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunPlugin;
+import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
 import me.mrCookieSlime.Slimefun.cscorelib2.protection.ProtectableAction;
 import org.bukkit.Location;
 import org.bukkit.Particle;

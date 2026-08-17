@@ -1,60 +1,45 @@
-# 霊幻之梦
+<p align="center">
+  <img src="docs/banner.svg" width="100%" alt="MAGICXPANSION Animated Banner" />
+</p>
 
-**作者：Apeiros**
-汉化作者：haiman233
+# MagicXpansion
 
-### Requirements/Dependencies:
+Addon de **Slimefun 4** que introduce componentes mágicos de alto nivel, minerales exóticos (como Arcanio), manipulación de almas y talismanes avanzados. Portado y corregido por **DrakesCraft Labs** para Paper/Purpur 1.21.11 en Java 21.
 
-**请注意你的服务器需要具备这些条件!**
+---
 
-- Java 11
-- [Paper](https://papermc.io)
-- [Slimefun4](https://github.com/Slimefun/Slimefun4)
-- [FoxyMachines](https://github.com/GallowsDove/FoxyMachines)
+## 🎯 Objetivo
 
-This addon adds more magical gadgets and talismans.
+Complementar la rama mística de Slimefun con materiales geo-minables en el End, cofres y cajas shulker reforzadas, y maquinaria especializada en manipulación de almas.
 
+---
 
-## 物品列表:
+## ⚡ Características Principales
 
-### List of items and resources:
-- Ender lumps IV and V
-- Arcanium Ore (GEO-mined in the End)
-- Arcanium Ingot
-- Reinforced Shulker Shell 
-- Reinforced Shulker Box
-- Synthetic Nautilus Shell
-- Shulkerium Alloy 
-- Enriched Shulkerium Alloy 
-- Blessed Aquatic Netherite
-- Core of Energy
-- Nether Star Block
-- Illusioner Totem **(WIP)**
+- **Manipulador de Almas (Soul Manipulator)**:
+  - Estación de trabajo para canalizar esencias mágicas y fabricar artefactos de alto nivel (reactivado y corregido en 1.21.11).
+- **Recursos del End**:
+  - *Mena y Lingote de Arcanio*: Minerales extraíbles mediante Geo-Miner en la dimensión del End.
+  - *Fragmentos de Ender (Ender Lumps IV y V)*.
+- **Almacenamiento Reforzado**:
+  - Caparazones y cajas de Shulker reforzadas de máxima capacidad.
+- **Talismanes Místicos**:
+  - Nuevos amuletos con efectos pasivos elementales y de utilidad.
 
-### List of tools, weapons, armor, and utilities:
-- Crossbow of Infinity
-- Crossbow of Rapidity
-- Crossbow of the Nether 
-- Poseidon's Trident
-- Energized Wind Staff
-- Spellbooks **(WIP)**
-- Spellcasting Devices (totems, wands, sceptres) **(WIP)**
-- Tome of Knowledge Synchronization **(WIP)**
-- Cactus Thorn Remover **(WIP)**
-- Cake Grabber **(WIP)**
+---
 
-### List of machines/multiblocks:
-- Carbon Crusher
-- EXP Solidifier **(WIP)**
-- Magic Generator **(WIP)**
-- Soul Reactor **(WIP)**
+## 🛠️ Entorno y Compatibilidad
 
-## Credits:
+- **Servidor**: Paper / Purpur 1.21.11
+- **Java**: 21
+- **Dependencias**:
+  - `Slimefun4-Drake`
+  - `FoxyMachines-drake`
 
-### 鸣谢
-- DeepFriedDurp#5899 for helping me come up with ideas
-- [@GallowsDove](https://github.com/gallowsdove), [@waleks](https://github.com/waleks647) and [@Mooy1](https://github.com/mooy1) for giving feedback on ideas
-- [Slimefun Discord](https://discord.gg/slimefun) for having a #programming-help channel
-- [@waleks](https://github.com/waleks647), [@Mooy1](https://github.com/mooy1), and [@WalshyDev](https://github.com/walshydev) for answering me in #programming-help
-- [@TheBusyBiscuit](https://github.com/thebusybiscuit) for creating [Slimefun4](https://github.com/Slimefun/Slimefun4)
-- [@GallowsDove](https://github.com/gallowsdove) for creating [FoxyMachines](https://github.com/GallowsDove/FoxyMachines)
+---
+
+## 📜 Créditos y Origen
+
+- **Autor original**: `Apeiros`
+- **Mantenimiento previo**: `haiman233`
+- **Adaptación y Mantenimiento 1.21.11**: **DrakesCraft Labs**

@@ -1,6 +1,6 @@
 package me.apeiros.magicxpansion.setup.items.electric;
 
-import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
+import com.github.drakescraft_labs.slimefun4.core.attributes.RecipeDisplayItem;
 import me.apeiros.magicxpansion.setup.MagicXpansionItems;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;

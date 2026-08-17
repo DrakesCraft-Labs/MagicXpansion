@@ -3,7 +3,7 @@ package me.apeiros.magicxpansion.setup.items.multiblocks;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
+import com.github.drakescraft_labs.slimefun4.libraries.paperlib.PaperLib;
 import me.apeiros.magicxpansion.setup.MagicXpansionItems;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import org.bukkit.Effect;
@@ -16,10 +16,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import com.github.drakescraft_labs.slimefun4.core.multiblocks.MultiBlockMachine;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunPlugin;
+import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;

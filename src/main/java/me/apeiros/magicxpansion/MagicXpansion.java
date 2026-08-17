@@ -2,7 +2,7 @@ package me.apeiros.magicxpansion;
 
 import io.github.mooy1.infinitylib.AbstractAddon;
 import io.github.mooy1.infinitylib.bstats.bukkit.Metrics;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
 import me.apeiros.magicxpansion.listeners.CrossbowListener;
 import me.apeiros.magicxpansion.listeners.MobDeathListener;
 import me.apeiros.magicxpansion.listeners.TridentListener;

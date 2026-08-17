@@ -1,7 +1,7 @@
 package me.apeiros.magicxpansion.setup.items.electric;
 
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
-import io.github.thebusybiscuit.slimefun4.implementation.items.electric.reactors.Reactor;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunPlugin;
+import com.github.drakescraft_labs.slimefun4.implementation.items.electric.reactors.Reactor;
 import me.apeiros.magicxpansion.setup.MagicXpansionItems;
 import me.apeiros.magicxpansion.utils.HeadTextures;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
