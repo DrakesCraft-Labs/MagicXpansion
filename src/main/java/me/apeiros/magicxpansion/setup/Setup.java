@@ -196,11 +196,22 @@ public class Setup {
                         null, null, null}).register(instance);
 
         // Register Soul Manipulator
+        // El Soul Manipulator llevaba deshabilitado desde el porteo: AContainer dejo de tener
+        // valores de energia por defecto, asi que hay que fijarlos antes de registrar o el propio
+        // Slimefun apaga el objeto. Apagado, ademas, quedaba inalcanzable todo lo que se fabrica
+        // con su tipo de receta.
+        //
+        // Los numeros lo situan donde lo pone su propia receta, que pide una Electric Smeltery y
+        // una Electric Press: por encima de esas dos y por debajo de un reactor.
         new SoulManipulator(Categories.MACHINES, SOUL_MANIPULATOR, RecipeType.ANCIENT_ALTAR,
                 new ItemStack[] {
                         SlimefunItems.ESSENCE_OF_AFTERLIFE, Items.BLOOD_INFUSED_SKULL, SlimefunItems.ESSENCE_OF_AFTERLIFE,
                         SlimefunItems.ELECTRIC_SMELTERY, SOUL_ORB, SlimefunItems.ELECTRIC_PRESS,
-                        Items.BUCKET_OF_BLOOD, Items.DEMONIC_PLATE, Items.BUCKET_OF_BLOOD}).register(instance);
+                        Items.BUCKET_OF_BLOOD, Items.DEMONIC_PLATE, Items.BUCKET_OF_BLOOD})
+                .setCapacity(2048)
+                .setEnergyConsumption(32)
+                .setProcessingSpeed(1)
+                .register(instance);
 
         // Register Soul Reactor, its parts, and Soul Coolant
         new UnplaceableHeadItem(Categories.MAGICAL, SOUL_REACTOR_COOLANT, RecipeType.ENHANCED_CRAFTING_TABLE,
