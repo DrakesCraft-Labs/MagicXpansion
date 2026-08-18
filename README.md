@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/MagicXpansion/master/docs/banner.svg" width="100%" alt="MAGICXPANSION Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/MagicXpansion/master/banner.svg" width="100%" alt="MAGICXPANSION Animated Banner" />
 </p>
 
 # MagicXpansion
